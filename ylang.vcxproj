@@ -136,6 +136,7 @@
     <ClCompile Include="str.c" />
     <ClCompile Include="type.c" />
     <ClCompile Include="ylang.cpp" />
+    <ClCompile Include="yunit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array.h" />
@@ -143,6 +144,7 @@
     <ClInclude Include="heap.h" />
     <ClInclude Include="str.h" />
     <ClInclude Include="type.h" />
+    <ClInclude Include="yunit.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

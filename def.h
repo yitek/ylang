@@ -4,11 +4,17 @@
 
 #ifdef __cplusplus 
 extern "C" {
+#else
+#ifndef true
+#define true 1
+#endif
+#ifndef false
+#define false 0
+#endif
 #endif
 	typedef unsigned long long size_t;
 	typedef int boolean;
-#define true 1
-#define false 0
+
 	typedef char byte;
 	typedef char unichar;
 

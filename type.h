@@ -21,18 +21,31 @@ extern "C" {
 		int kind;
 		struct TStr* name;
 	} Type;
+	typedef union TValue {
+		byte members[0];
+		byte buffer[0];
+		byte byteValue;
+		int intValue;
+		boolean boolValue;
+		float floatValue;
+		double doubleValue;
+		void* pointerValue;
+	} Value;
 
 	typedef struct TObject {
 		const Type* type;
+		/// <summary>
+		/// 这部分就是(必须)拷贝 TValue
+		/// </summary>
 		union {
 			byte members[0];
+			byte buffer[0];
 			byte byteValue;
 			int intValue;
 			float floatValue;
 			double doubleValue;
 			void* pointerValue;
 		};
-		
 	} Object;
 
 	typedef struct TArgument {

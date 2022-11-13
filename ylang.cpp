@@ -2,6 +2,7 @@
 //
 
 #include<stdio.h>
+#include "yunit.h"
 #include "type.h"
 #include "heap.h"
 
@@ -34,6 +35,7 @@ void main()
 {
     
     printf("hello ylang!\n");
+    testTest();
     TestMemory();
     TestInvoke();
     
